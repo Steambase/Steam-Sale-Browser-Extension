@@ -2,15 +2,16 @@ import "../styles.css"
 
 function SteamSaleTrackerPage() {
     return (
-        <div className="bg-slate-300"
-            style={{
-                display: "flex",
-                flexDirection: "column",
-                padding: 16
-            }}>
-            <h2>Delta Flyer Tab</h2>
-
-            <p>This tab is only available on the Delta Flyer page.</p>
+        <div className="w-screen h-screen bg-slate-950">
+            <div className="relative flex flex-col items-center">
+                <div className="container relative">
+                    <main>
+                        <article className="">
+                            <h1>When is the next Steam sale?</h1>
+                        </article>
+                    </main>
+                </div>
+            </div>
         </div>
     )
 }
