@@ -7,6 +7,8 @@ import { Snowflake, Flower, Sun, Leaf } from "lucide-react"
 import { fetchCurrentSteamSale } from "@lib/queries/fetchCurrentSteamSale"
 import { fetchNextSteamSale } from "~lib/queries/fetchNextSteamSale"
 
+import logo from "data-base64:~assets/logo.svg"
+
 import type { SteamSale } from "@lib/types/steam-sale"
 
 function SaleTrackerPage() {
@@ -36,7 +38,7 @@ function SaleTrackerPage() {
         <>
             <PageLayout>
                 <article className="py-32">
-                    <section className="flex flex-col space-y-8">
+                    <section className="flex flex-col items-center space-y-8">
                         <h1>When is the next Steam sale?</h1>
                         <SaleSubHeader
                             now={now}
@@ -44,7 +46,7 @@ function SaleTrackerPage() {
                             next={nextSale}
                         />
                         <ul
-                            className="mx-auto list-none flex flex-row flex-wrap gap-4 justify-center items-center text-slate-500"
+                            className="list-none flex flex-row flex-wrap gap-4 justify-center items-center text-slate-500"
                         >
                             <li>
                                 <a
@@ -52,7 +54,7 @@ function SaleTrackerPage() {
                                     rel="prefetch-intent"
                                     className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
                                 >
-                                    Steam Spring Sale
+                                    Spring Sale
                                     <Flower className="ml-2 w-5 h-5" />
                                 </a>
                             </li>
@@ -61,7 +63,7 @@ function SaleTrackerPage() {
                                     href={`${process.env.PLASMO_PUBLIC_SITE_URL}/sales/${now.getFullYear()}/steam-summer-sale?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}
                                     className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
                                 >
-                                    Steam Summer Sale
+                                    Summer Sale
                                     <Sun className="ml-2 w-5 h-5" />
                                 </a>
                             </li>
@@ -70,7 +72,7 @@ function SaleTrackerPage() {
                                     href={`${process.env.PLASMO_PUBLIC_SITE_URL}/sales/${now.getFullYear()}/steam-autumn-sale?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}
                                     className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
                                 >
-                                    Steam Autumn Sale
+                                    Autumn Sale
                                     <Leaf className="ml-2 w-5 h-5" />
                                 </a>
                             </li>
@@ -80,11 +82,16 @@ function SaleTrackerPage() {
                                     rel="prefetch-intent"
                                     className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
                                 >
-                                    Steam Winter Sale
+                                    Winter Sale
                                     <Snowflake className="ml-2 w-5 h-5" />
                                 </a>
                             </li>
                         </ul>
+                        <div className="pt-4">
+                            <a href={`${process.env.PLASMO_PUBLIC_SITE_URL}?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}>
+                                <img src={logo} alt="Steambase Logo" width="150" />
+                            </a>
+                        </div>
                     </section>
                 </article>
             </PageLayout>
