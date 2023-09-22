@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import PageLayout from "@layouts/page-layout"
+import SaleSubHeader from "@components/sale-sub-header"
 
 import { fetchCurrentSteamSale } from "@lib/queries/fetchCurrentSteamSale"
 import { fetchNextSteamSale } from "~lib/queries/fetchNextSteamSale"
@@ -7,6 +8,7 @@ import { fetchNextSteamSale } from "~lib/queries/fetchNextSteamSale"
 import type { SteamSale } from "@lib/types/steam-sale"
 
 function SaleTrackerPage() {
+    const [now, setNow] = useState<Date>(new Date())
     const [currentSale, setCurrentSale] = useState<SteamSale>(null)
     const [nextSale, setNextSale] = useState<SteamSale>(null)
 
@@ -23,15 +25,23 @@ function SaleTrackerPage() {
             setNextSale(nextSale)
         }
 
+        // Update State
+        setNow(new Date())
         fetchSalesData()
     }, [])
 
     return (
         <>
             <PageLayout>
-                <article className="flex flex-col">
-                    <h1>When is the next Steam sale?</h1>
-                    <p className="text-white">{nextSale?.name ?? "unknown"}</p>
+                <article className="py-32">
+                    <section className="flex flex-col space-y-8">
+                        <h1>When is the next Steam sale?</h1>
+                        <SaleSubHeader
+                            now={now}
+                            current={currentSale}
+                            next={nextSale}
+                        />
+                    </section>
                 </article>
             </PageLayout>
         </>

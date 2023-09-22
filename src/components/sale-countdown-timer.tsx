@@ -10,7 +10,7 @@ function getColorClasses(color: "start" | "end") {
     return color === "start" ? "text-green-400 border-green-400" : "text-amber-300 border-amber-300";
 }
 
-export function SaleCountdownTimer(props: Props) {
+function SaleCountdownTimer(props: Props) {
     const [days, hours, minutes, seconds] = useCountdown(props.date);
 
     if (days + hours + minutes + seconds <= 0) {
@@ -43,3 +43,5 @@ export function SaleCountdownTimer(props: Props) {
         </div>
     );
 }
+
+export default SaleCountdownTimer;
