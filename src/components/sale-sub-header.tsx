@@ -42,7 +42,7 @@ function SaleSubHeader({ now, current, next }: Props) {
                         <br />
                         Steam sale, which starts on <strong>{nextSaleStartAt.toLocaleDateString()}</strong>.
                     </p>
-                    <span className="font-light text-slate-400">
+                    <span className="text-base font-light text-slate-400">
                         <i>(10:00 AM - Pacific Time)</i>
                     </span>
                 </div>
@@ -79,7 +79,7 @@ function SaleSubHeader({ now, current, next }: Props) {
                         <br />
                         It will end <strong>{currentSaleEndAt.toLocaleDateString()}</strong>
                     </p>
-                    <span className="font-light text-slate-400">
+                    <span className="text-base font-light text-slate-400">
                         <i>(10:00 AM - Pacific Time)</i>
                     </span>
                 </div>
