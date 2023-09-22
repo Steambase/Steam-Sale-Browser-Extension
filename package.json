@@ -36,6 +36,11 @@
     ],
     "chrome_url_overrides": {
       "newtab": "tabs/steam-sale-tracker.html"
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "steam-sale-tracker@steambase.io"
+      }
     }
   }
 }
