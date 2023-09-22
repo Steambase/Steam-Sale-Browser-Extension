@@ -10,7 +10,7 @@ interface ListSteamSalesRequest {
 }
 
 export async function listSteamSales(request :ListSteamSalesRequest | undefined = undefined) :Promise<SteamSale[]> {
-    const salesUrl = new URL(`${process.env.PUBLIC_API_URL}/steam/sales`);
+    const salesUrl = new URL(`${process.env.PLASMO_PUBLIC_API_URL}/steam/sales`);
 
     // Filtering
     if (request?.type) {
