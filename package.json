@@ -1,8 +1,8 @@
 {
   "name": "steam-sale-extension",
-  "displayName": "Steam sale extension",
+  "displayName": "Steam Sale Tracker",
   "version": "0.0.1",
-  "description": "Steam Sale tracker.",
+  "description": "Steam sale tracker.",
   "author": "Steambase",
   "scripts": {
     "dev": "plasmo dev",
