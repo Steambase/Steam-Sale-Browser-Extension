@@ -39,7 +39,7 @@ function SaleTrackerPage() {
             <PageLayout>
                 <article className="py-4 md:py-32">
                     <section className="flex flex-col items-center space-y-8">
-                        <h1>When is the next Steam sale?</h1>
+                        <h1 className="font-semibold text-center text-3xl md:text-4xl xl:text-5xl text-white">When is the next Steam sale?</h1>
                         <SaleSubHeader
                             now={now}
                             current={currentSale}
