@@ -87,9 +87,9 @@ function SaleTrackerPage() {
                                 </a>
                             </li>
                         </ul>
-                        <div className="pt-4">
+                        <div className="px-4 py-2 border-2 rounded-lg border-transparent hover:border-blue-400 transition-colors duration-300">
                             <a href={`${process.env.PLASMO_PUBLIC_SITE_URL}?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}>
-                                <img src={logo} alt="Steambase Logo" width="150" className="opacity-75" />
+                                <img src={logo} alt="Steambase Logo" width="150" className="object-cover" />
                             </a>
                         </div>
                     </section>
