@@ -37,7 +37,7 @@ function SaleTrackerPage() {
     return (
         <>
             <PageLayout>
-                <article className="py-32">
+                <article className="py-4 md:py-32">
                     <section className="flex flex-col items-center space-y-8">
                         <h1>When is the next Steam sale?</h1>
                         <SaleSubHeader
@@ -89,7 +89,7 @@ function SaleTrackerPage() {
                         </ul>
                         <div className="pt-4">
                             <a href={`${process.env.PLASMO_PUBLIC_SITE_URL}?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}>
-                                <img src={logo} alt="Steambase Logo" width="150" />
+                                <img src={logo} alt="Steambase Logo" width="150" className="opacity-75" />
                             </a>
                         </div>
                     </section>
