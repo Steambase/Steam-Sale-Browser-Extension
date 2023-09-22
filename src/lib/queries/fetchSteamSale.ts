@@ -5,7 +5,7 @@ export async function fetchSteamSale(year: number, slug: string): Promise<SteamS
         return undefined;
     }
 
-    const getSaleUrl = new URL(`${import.meta.env.PUBLIC_API_URL}/steam/sales/${year}/${slug}`);
+    const getSaleUrl = new URL(`${process.env.PUBLIC_API_URL}/steam/sales/${year}/${slug}`);
     const getSaleResponse = await fetch(getSaleUrl);
     const saleData = await getSaleResponse.json() as SteamSale | undefined;
 
