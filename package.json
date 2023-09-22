@@ -31,7 +31,8 @@
   },
   "manifest": {
     "host_permissions": [
-      "https://*/*"
+      "https://steambase.io/*",
+      "https://api.steambase.io/*"
     ],
     "chrome_url_overrides": {
       "newtab": "tabs/steam-sale-tracker.html"
