@@ -1,6 +1,6 @@
 import "../styles.css"
 
-function TrackerPage() {
+function SteamSaleTrackerPage() {
     return (
         <div className="bg-slate-300"
             style={{
@@ -15,4 +15,4 @@ function TrackerPage() {
     )
 }
 
-export default TrackerPage
+export default SteamSaleTrackerPage
