@@ -29,6 +29,9 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
-    ]
+    ],
+    "chrome_url_overrides" : {
+      "newtab": "tabs/delta-flyer.html"
+    }
   }
 }
