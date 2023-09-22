@@ -52,7 +52,7 @@ function SaleTrackerPage() {
                                 <a
                                     href={`${process.env.PLASMO_PUBLIC_SITE_URL}/sales/${now.getFullYear()}/steam-spring-sale?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}
                                     rel="prefetch-intent"
-                                    className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
+                                    className="min-w-50 max-w-50 px-3 py-2 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
                                 >
                                     Spring Sale
                                     <Flower className="ml-2 w-5 h-5" />
@@ -61,7 +61,7 @@ function SaleTrackerPage() {
                             <li>
                                 <a
                                     href={`${process.env.PLASMO_PUBLIC_SITE_URL}/sales/${now.getFullYear()}/steam-summer-sale?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}
-                                    className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
+                                    className="min-w-50 max-w-50 px-3 py-2 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
                                 >
                                     Summer Sale
                                     <Sun className="ml-2 w-5 h-5" />
@@ -70,7 +70,7 @@ function SaleTrackerPage() {
                             <li>
                                 <a
                                     href={`${process.env.PLASMO_PUBLIC_SITE_URL}/sales/${now.getFullYear()}/steam-autumn-sale?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}
-                                    className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
+                                    className="min-w-50 max-w-50 px-3 py-2 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
                                 >
                                     Autumn Sale
                                     <Leaf className="ml-2 w-5 h-5" />
@@ -80,7 +80,7 @@ function SaleTrackerPage() {
                                 <a
                                     href={`${process.env.PLASMO_PUBLIC_SITE_URL}/sales/${now.getFullYear()}/steam-winter-sale?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}
                                     rel="prefetch-intent"
-                                    className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
+                                    className="min-w-50 max-w-50 px-3 py-2 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
                                 >
                                     Winter Sale
                                     <Snowflake className="ml-2 w-5 h-5" />
