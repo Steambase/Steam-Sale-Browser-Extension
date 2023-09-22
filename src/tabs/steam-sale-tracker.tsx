@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react"
 import PageLayout from "@layouts/page-layout"
 import SaleSubHeader from "@components/sale-sub-header"
 
+import { Snowflake, Flower, Sun, Leaf } from "lucide-react"
+
 import { fetchCurrentSteamSale } from "@lib/queries/fetchCurrentSteamSale"
 import { fetchNextSteamSale } from "~lib/queries/fetchNextSteamSale"
 
@@ -41,6 +43,48 @@ function SaleTrackerPage() {
                             current={currentSale}
                             next={nextSale}
                         />
+                        <ul
+                            className="mx-auto list-none flex flex-row flex-wrap gap-4 justify-center items-center text-slate-500"
+                        >
+                            <li>
+                                <a
+                                    href={`${process.env.PLASMO_PUBLIC_SITE_URL}/sales/${now.getFullYear()}/steam-spring-sale?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}
+                                    rel="prefetch-intent"
+                                    className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
+                                >
+                                    Steam Spring Sale
+                                    <Flower className="ml-2 w-5 h-5" />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href={`${process.env.PLASMO_PUBLIC_SITE_URL}/sales/${now.getFullYear()}/steam-summer-sale?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}
+                                    className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
+                                >
+                                    Steam Summer Sale
+                                    <Sun className="ml-2 w-5 h-5" />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href={`${process.env.PLASMO_PUBLIC_SITE_URL}/sales/${now.getFullYear()}/steam-autumn-sale?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}
+                                    className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
+                                >
+                                    Steam Autumn Sale
+                                    <Leaf className="ml-2 w-5 h-5" />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href={`${process.env.PLASMO_PUBLIC_SITE_URL}/sales/${now.getFullYear()}/steam-winter-sale?utm_source=steambase&utm_medium=browser_extension&utm_campaign=steam_sale_extension`}
+                                    rel="prefetch-intent"
+                                    className="min-w-50 max-w-50 p-4 flex flex-row items-center border-2 rounded-lg text-base font-normal text-slate-200 hover:text-slate-200 hover:no-underline border-slate-800 bg-slate-800 hover:border-blue-400"
+                                >
+                                    Steam Winter Sale
+                                    <Snowflake className="ml-2 w-5 h-5" />
+                                </a>
+                            </li>
+                        </ul>
                     </section>
                 </article>
             </PageLayout>
