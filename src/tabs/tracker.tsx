@@ -1,6 +1,6 @@
 import "../styles.css"
 
-function DeltaFlyerPage() {
+function TrackerPage() {
     return (
         <div className="bg-slate-300"
             style={{
@@ -15,4 +15,4 @@ function DeltaFlyerPage() {
     )
 }
 
-export default DeltaFlyerPage
+export default TrackerPage

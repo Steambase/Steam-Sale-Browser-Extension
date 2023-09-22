@@ -31,7 +31,7 @@
       "https://*/*"
     ],
     "chrome_url_overrides" : {
-      "newtab": "tabs/delta-flyer.html"
+      "newtab": "tabs/tracker.html"
     }
   }
 }
