@@ -2,7 +2,7 @@
   "name": "steam-sale-extension",
   "version": "1.0.0",
   "displayName": "Next Steam Sale Tracker",
-  "description": "Realtime Steam sale tracker and countdown timer for upcoming Steam sales. Simply open up a new tab to see when the next sale starts.",
+  "description": "Track Steam sales in real-time to get the best deal on your next game purchase.",
   "author": "Steambase",
   "homepage": "https://steambase.io/sales",
   "scripts": {
