@@ -2,7 +2,7 @@
   "name": "steam-sale-extension",
   "version": "1.0.0",
   "displayName": "Next Steam Sale Tracker",
-  "description": "Track Steam sales in real-time to get the best deal on your next game purchase.",
+  "description": "Track Steam sales in real-time and get the best deal on your next game purchase.",
   "author": "Steambase",
   "homepage": "https://steambase.io/sales",
   "scripts": {
