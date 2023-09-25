@@ -25,7 +25,7 @@ function SaleSubHeader({ now, current, next }: Props) {
     /**
      * Handle Next Sale Case
      */
-    if (next && nextSaleStartAt && nextStartsAtDays !== undefined) {
+    if (!current && next && nextSaleStartAt && nextStartsAtDays !== undefined) {
         return (
             <div className="flex flex-col items-center space-y-8">
                 <div className="flex flex-col space-y-1 text-center">
