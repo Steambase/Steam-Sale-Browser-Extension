@@ -20,7 +20,7 @@ a full breakdown of historical Steam sales as well as list of upcoming sales.
 Run the following in the root directory of this repository. Requirements:
 
 - Any operating system which supports running node
-- Node LTS (>= `18.18.0`)
+- Node LTS >= `18.18.0`
 - npm >= `9.5.1`
 
 ```bash
