@@ -6,7 +6,7 @@ source:
 
 - [Google Chrome](https://chromewebstore.google.com/detail/next-steam-sale-tracker/dgkjcegddpkjhpebjdfilaadhlgphenn)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/next-steam-sale-tracker)
-- [Edge (Launching Soon)](#)
+- [Edge](https://microsoftedge.microsoft.com/addons/detail/next-steam-sale-tracker/iglldimpcnbajkbfchgpkanhiapkcfob)
 - [Opera (Launching Soon)](#)
 
 ## Steambase Sale Tracker
